@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,a,b;
+	cin>>t;
+	while(t--)
+	{   
+	    cin>>a>>b;
+	    if(a==b)
+	        cout<<"YES\n";
+        else
+        {
+            if(a%2==0 && b%2==0)           \\If A and B both are Even
+                cout<<"YES\n";
+            else if(a%2!=0 && b%2!=0)      \\If A and B both are ODD
+                cout<<"YES\n";
+            else                            \\If A and B are Ever or ODD
+                cout<<"NO\n";
+        }
+	}
+	return 0;
+}
